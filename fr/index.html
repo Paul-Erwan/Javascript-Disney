@@ -5,51 +5,72 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="content">
 	<title>Disneyland</title>
-	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+body, html {
+    height: 100%;
+}
+.bg {
+    /* The image used */
+    background-image: url("../images/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+</style>
 </head>
-<body>
+<body class="bg">
 	<header>
+		<nav class="navbar navbar-expand-lg nav-pills navbar-light bg-light">
+					<a class="navbar-brand mr-auto" href="#">
+					<img src="../images/logo.png" width="280" height="80" alt="">
+					</a>
+					<a class="nav-item nav-link active" href="#">Offres</a>
+		      <a class="nav-item nav-link" href="#">Le Parc</a>
+		      <a class="nav-item nav-link" href="#">Transport</a>
+					<a class="nav-item nav-link" href="#">Aide</a>
+		</nav>
 
-		<div class="container-fluid">
-	  ...
-	</div>
-	<nav>
-		<ul>
-			<li><a href="nos_offres.html" title="">nos offres</a></li>
-			<li><a href="qui_sommes_nous.html" title="">qui sommes-nous</a></li>
-			<li><a href="apprendre_lsf.html" title="">apprendre la lsf</a></li>
-			<li><a href="certifications.html" title="">certifications</a></li>
-			<li><a href="connexion.html" title="">connexion</a></li>
-			<li class="nav_btn_inscription"><a href="inscription.html" title="">inscription</a></li>
-		</ul>
-	</nav>
 	</header>
-
-	<main>
-
-		<section class="home_section_lsf">
-			<div class="container flex-end">
-				<div class="w-50 text-white flex-col h-60">
-					<h2>Apprendre la lsf en ligne</h2>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat</p>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat</p>
-
-					<a href="#" title="" class="button_orange">s'inscrire</a>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 bg-light">
+			<h2 class="text-center"> Réservez votre séjour</h2>
+			<label for="debut">Début</label>
+	     <input type="email" class="form-control" id="debut" aria-describedby="debut" placeholder="JJ/MM/AA">
+			 <label for="fin">Fin</label>
+ <input type="email" class="form-control" id="fin" aria-describedby="fin" placeholder="JJ/MM/AA">
+				<div class="row">
+					<div class="col-md-6">
+						<select class="custom-select">
+							<label for="adultes">Adultes</label>
+						  <option selected>Open this select menu</option>
+						  <option value="1">One</option>
+						  <option value="2">Two</option>
+						  <option value="3">Three</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<label for="enfants">enfants</label>
+						<select class="custom-select">
+							<option selected>Open this select menu</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
 				</div>
-			</div>
-		</section>
-	</main>
+    </div>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
