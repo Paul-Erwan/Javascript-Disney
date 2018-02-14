@@ -10,6 +10,7 @@
 body, html {
     height: 100%;
 }
+
 .bg {
     /* The image used */
     background-image: url("../images/background.jpg");
@@ -24,7 +25,7 @@ body, html {
 
 }
 .scrollable {
-  height:450px;
+  height: 550px;
   overflow-y: scroll;
 }
 
@@ -44,49 +45,37 @@ p {
 	opacity: 0;
 }
 
-<<<<<<< HEAD
-.nav-marg {
-	margin-left: 12%;
-}
-
-.nav-item {
-	margin-left: 2%;
-	margin-right: 1%;
-	font-size: 13pt;
-}
-
-
-
-=======
 .btn {
 	background-color: #ff8f00;
 	border: 0px;
 }
 .btn:hover {
 	background-color: #fdd835;
+	border: 0px;
 }
 
->>>>>>> 472bb5ba471e5e17d06fe0588347cc4181881db4
+
 </style>
 </head>
-<body class="bg">
+<body class="">
 	<header>
 		<nav class="navbar navbar-expand-lg nav-pills navbar-light bg-light">
-					<a class="navbar-brand mr-auto" href="#">
+					<a class="navbar-brand mr-auto mx-4" href="#">
 					<img class="nav-marg" src="../images/logo.png" width="200" height="60" alt="">
 					</a>
-					<a class="nav-item nav-link active" href="#">Offres</a>
-		      		<a class="nav-item nav-link" href="#">Le Parc</a>
-		     		<a class="nav-item nav-link" href="#">Transport</a>
-					<a class="nav-item nav-link" href="#">Aide</a>
+					<a class="nav-item nav-link active mx-2" href="#">Offres</a>
+		      		<a class="nav-item nav-link mx-2" href="#">Le Parc</a>
+		     		<a class="nav-item nav-link mx-2" href="#">Transport</a>
+					<a class="nav-item nav-link mx-4" href="#">Aide</a>
 		</nav>
 
 	</header>
+<section class="bg">
 
-	<div class="container-fluid mt-5 pt-5">
-	    <div class="row">
-	        <div class="col-md-3 background bg-light ml-5 rounded">
-						<h2 class="text-center my-4"> Réservez votre séjour</h2>
+	<div class="container-fluid align-middle">
+	    <div class="row pt-5">
+	        <div class="col-md-3 bg-light ml-5 rounded">
+						<h2 class="text-center my-5"> Réservez votre séjour</h2>
 						<label for="debut">Début</label>
 						<input type="text" class="form-control" id="debut" aria-describedby="debut" placeholder="JJ/MM/AA">
 						<label for="fin" class="mt-4">Fin</label>
@@ -115,7 +104,7 @@ p {
 								</div>
 							</div>
 							<div class="row my-4">
-								<div class="col-md-12">
+								<div class="col-md-12 mt-5">
 									<button id="bouton" type="button" class="btn btn-primary btn-lg btn-block">Voir les tarifs</button>
 								</div>
 							</div>
@@ -181,6 +170,7 @@ p {
 	        	</div>
 	    </div>
 	</div>
+</section>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" type="text/javascript"></script>
